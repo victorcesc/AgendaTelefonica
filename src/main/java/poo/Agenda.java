@@ -61,7 +61,7 @@ public class Agenda {
             }
         }
 
-        return (Pessoa[]) resultado.toArray();
+        return resultado.toArray(new Pessoa[resultado.size()]);
 
     }
 

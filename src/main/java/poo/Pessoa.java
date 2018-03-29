@@ -16,7 +16,7 @@ public class Pessoa {
 
     public Pessoa(String nome, String telefone, Data dNasc, int id) {
         this(nome,telefone,id);
-        this.id = id;
+        this.dNasc = dNasc;
     }
 
     public String getNome() {
@@ -66,9 +66,9 @@ public class Pessoa {
     public String toString(){
         String res;
         if(this.dNasc!=null) {
-             res = "Nome :" + this.nome + "\nSobrenome: " + this.sobrenome + "\nTelefone: " + this.telefone + "\nE-mail: " + this.email + "\nData Nasc:" + this.dNasc.toString();
-        }else{
-             res = "Nome :" + this.nome + "\nSobrenome: " + this.sobrenome + "\nTelefone: " + this.telefone + "\nE-mail: " + this.email + "\nData Nasc:--/--/----";
+            res = "Nome :" + this.nome + "\nSobrenome: " + this.sobrenome + "\nTelefone: " + this.telefone + "\nE-mail: " + this.email + "\nData Nasc:" + this.dNasc.toString();
+        }else {
+            res = "Nome :" + this.nome + "\nSobrenome: " + this.sobrenome + "\nTelefone: " + this.telefone + "\nE-mail: " + this.email + "\nData Nasc:--/--/----";
         }
         return res;
     }

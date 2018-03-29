@@ -16,7 +16,14 @@ public class Principal {
 
         Pessoa[] resultado = a.localizar("Victor");
 
+        Pessoa j = resultado[0];
+        System.out.println(j);
 
+        j.setNome("Pedro");
+
+        System.out.println(j);
+        System.out.println(resultado[0]);
+        System.out.println(p);
 
     }
 }
